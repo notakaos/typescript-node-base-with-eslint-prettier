@@ -10,7 +10,16 @@
     "tsc": "tsc",
     "build": "npm-run-all clean tsc",
     "start": "node .",
-    "lint": "eslint src/**/*"
+    "lint": "eslint --ext .ts,.js src/",
+    "format": "prettier --write 'src/**/*.{ts,js}'",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,js}": [
+      "eslint --ext .ts,.js",
+      "prettier --write",
+      "git add"
+    ]
   },
   "keywords": [],
   "author": "",
@@ -22,6 +31,8 @@
     "eslint": "^6.5.1",
     "eslint-config-prettier": "^6.4.0",
     "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.8",
+    "lint-staged": "^9.4.2",
     "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
     "rimraf": "^3.0.0",
