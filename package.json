@@ -9,7 +9,8 @@
     "clean": "rimraf dist/*",
     "tsc": "tsc",
     "build": "npm-run-all clean tsc",
-    "start": "node ."
+    "start": "node .",
+    "lint": "eslint src/**/*"
   },
   "keywords": [],
   "author": "",
