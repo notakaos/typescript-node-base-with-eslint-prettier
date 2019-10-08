@@ -2,4 +2,5 @@ function hello(name: string) {
     return `Hello, ${name}!`;
 }
 
-console.log(hello('TypeScript'));
+const name = 'Taro';
+console.log(hello(name));
