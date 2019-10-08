@@ -6,7 +6,7 @@
 
 ```
 git clone https://github.com/notakaos/typescript-node-base-with-eslint-prettier
-cd typescript-node-base
+cd typescript-node-base-with-eslint-prettier
 npm install
 npm run dev
 ```
