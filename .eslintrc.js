@@ -5,7 +5,10 @@ module.exports = {
     },
     "extends": [
         "eslint:recommended",
-        "plugin:@typescript-eslint/eslint-recommended"
+        "plugin:@typescript-eslint/eslint-recommended",
+
+        "plugin:prettier/recommended",
+        "prettier/@typescript-eslint"
     ],
     "globals": {
         "Atomics": "readonly",
@@ -13,7 +16,8 @@ module.exports = {
     },
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaVersion": 2019
+        "ecmaVersion": 2019,
+        "sourceType": "module"
     },
     "plugins": [
         "@typescript-eslint"
