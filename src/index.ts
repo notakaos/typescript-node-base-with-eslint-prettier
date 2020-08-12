@@ -1,6 +1,5 @@
 function hello(name: string): string {
-    return `Hello, ${name}!`;
+  return `Hello, ${name}!`;
 }
 
-const name = 'Taro';
-console.log(hello(name));
+console.log(hello("TypeScript!!!!!"));
